@@ -12,7 +12,8 @@ const students = [
         age: 54,
         sex: 'F',
         location: "England",
-        program: "Msc. Commentary"
+        program: "Msc. Commentary",
+        image:"https://unsplash.it/400/400"
     },
     {
         id: 2,
@@ -20,7 +21,7 @@ const students = [
         age: 25,
         sex: 'M',
         location: "Egypt",
-        program: "Msc. Betrayal"
+        program: "Msc. Betrayal",
     },
     {
         id: 3,
@@ -28,7 +29,7 @@ const students = [
         age: 23,
         sex: 'M',
         location: "U.S.A",
-        program: "Msc. PlaceHolding"
+        program: "Msc. PlaceHolding",
     },
     {
         id: 4,
@@ -36,7 +37,7 @@ const students = [
         age: 19,
         sex: 'F',
         location: "U.S.A",
-        program: "Msc. Programming"
+        program: "Msc. Programming",
     },
 ]
 
@@ -59,4 +60,4 @@ app.get('/api/student/:id', (req, res) => {
     }
     res.json({ students: {} });
 })
-app.listen(PORT, () => `App running on http://localhost:${PORT}`)
+app.listen(PORT, () => console.log(`App running on http://localhost:${PORT}`))
