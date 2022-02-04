@@ -2,8 +2,8 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 require('dotenv').config()
-PORT = process.env.PORT
-
+const PORT = process.env.PORT
+app.use(cors())
 const Database = {}
 const students = [
     {
@@ -43,7 +43,7 @@ const students = [
 Database.students = students;
 
 app.get('/', (req, res) => res.json({ welcome: 'Welcome to our site' }))
-app.get('/api/students', cors(), (req, res) => {
+app.get('/api/students',  (req, res) => {
     if (req.query.limit) {
         res.json({ students: Database.students.slice(0, req.query.limit) });
     }
@@ -59,4 +59,4 @@ app.get('/api/student/:id', (req, res) => {
     }
     res.json({ students: {} });
 })
-app.listen(PORT, () => `App running on http://localhost:${PORT}`)
+app.listen(PORT, () => console.log(`App running on http://localhost:${PORT}`))
