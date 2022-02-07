@@ -14,7 +14,7 @@ const students = [
         age: 54,
         sex: 'F',
         location: "England",
-        program: "Msc. Commentary"
+        program: "Msc. Commentary",
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ const students = [
         age: 25,
         sex: 'M',
         location: "Egypt",
-        program: "Msc. Betrayal"
+        program: "Msc. Betrayal",
     },
     {
         id: 3,
@@ -30,7 +30,7 @@ const students = [
         age: 23,
         sex: 'M',
         location: "U.S.A",
-        program: "Msc. PlaceHolding"
+        program: "Msc. PlaceHolding",
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ const students = [
         age: 19,
         sex: 'F',
         location: "U.S.A",
-        program: "Msc. Programming"
+        program: "Msc. Programming",
     },
 ]
 
