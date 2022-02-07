@@ -13,7 +13,6 @@ const students = [
         sex: 'F',
         location: "England",
         program: "Msc. Commentary",
-        image:"https://unsplash.it/400/400"
     },
     {
         id: 2,
